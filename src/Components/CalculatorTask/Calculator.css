@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin-top: 20px;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  place-content: center;
+  height: 100vh;
+  font-size: 2rem;
+}
+
+.container {
+  height: 80vh;
+  width: 50vh;
+  background-color: rgb(179, 205, 255);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.wrapper {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.screen {
+  grid-column: 1 / -1;
+  color: white;
+  text-align: right;
+  padding: 0.5rem;
+  font-size: 4rem;
+  overflow: hidden;
+}
+.btn {
+  display: grid;
+  place-content: center;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.zero {
+  grid-column: 1 / span 2;
+  align-items: center;
+  padding-left: 2rem;
+}
